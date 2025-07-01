@@ -33,7 +33,7 @@ public class PdfSignerLegacy
             System.Drawing.Rectangle rect = new System.Drawing.Rectangle(100, 500, 300, 400);
 
             //create any of the three signature types
-            PKCS7 pkcs = new PKCS7(certPath1, password1);
+            PKCS7 pkcs = new PKCS7(certPath2, password2);
 
             // sign the PDF file
             pdfSign.Sign(1, true, rect, pkcs);
